@@ -1,23 +1,20 @@
 <template>
     <div>
-        <Header/>
-        
+        <Header />
+
         <div class="p-5 row">
             <slot />
         </div>
-        <Footer/>
-        
+        <Footer />
+
 
 
     </div>
 </template>
 
 <script>
-    export default {
         
-    }
 </script>
 
 <style scoped>
-
 </style>
