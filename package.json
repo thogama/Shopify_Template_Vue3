@@ -1,11 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "heroku-postbuild":"npm run build"
+    "start": "nuxt start",
+    "build": "nuxt build && nuxt generate",
+    "dev": "nuxt dev"
   },
   "devDependencies": {
     "@types/bootstrap": "^5.2.1",
