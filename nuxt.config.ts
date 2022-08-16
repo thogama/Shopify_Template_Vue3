@@ -3,7 +3,6 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
     
     ssr:false,
-    target:'static',
     css: [
         
         "@fortawesome/fontawesome-svg-core/styles.css",
