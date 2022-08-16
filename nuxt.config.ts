@@ -8,6 +8,7 @@ export default defineNuxtConfig({
         "@fortawesome/fontawesome-svg-core/styles.css",
         "~~/sass/main.scss"
     ],
+   
     
 })
 

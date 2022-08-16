@@ -4,7 +4,7 @@
     "start": "nuxt start",
     "build": "nuxt build ",
     "dev": "nuxt dev",
-    "preview":"nuxt preview"
+    "preview": "nuxt preview"
   },
   "devDependencies": {
     "@types/bootstrap": "^5.2.1",
