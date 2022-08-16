@@ -2,7 +2,7 @@
     <div>
         <Header />
         <div class="p-5 row">
-            <slot />
+            <slot  />
         </div>
         <Footer />
 
@@ -11,7 +11,9 @@
 </template>
 
 <script>
-        
+useHead({
+    title: "Vue template"
+})
 </script>
 
 <style scoped>

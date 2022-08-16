@@ -1,6 +1,7 @@
 <template>
-    <footer id="footer-root">
-this is footer
+    <footer class=" ps-2 pe-2 pt-3 pb-3" id="footer-root">
+        <h5 class="m-3 p-3  border-bottom ">Vue template</h5>
+        
     </footer>
 </template>
 
@@ -11,7 +12,14 @@ this is footer
 </script>
 
 <style  scoped>
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
 #footer-root{
-    color: green;
+    background-color: black;
+    color: goldenrod;
 }
 </style>
