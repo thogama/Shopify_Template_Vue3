@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "node .output/server/index.mjs",
+    "start": "nuxt start",
     "build": "nuxt build ",
     "dev": "nuxt dev",
     "preview":"nuxt preview"
