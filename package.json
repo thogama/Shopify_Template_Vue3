@@ -6,8 +6,7 @@
     "start": "nuxt preview"
   },
   "devDependencies": {
-    "@types/bootstrap": "^5.2.1",
-    "nuxt": "3.0.0-rc.6"
+    "@types/bootstrap": "^5.2.1"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
@@ -16,6 +15,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.1.2",
     "@fortawesome/vue-fontawesome": "^3.0.1",
     "bootstrap": "^5.2.0",
+    "nuxt": "^3.0.0-rc.6",
     "sass": "^1.54.3"
   }
 }
