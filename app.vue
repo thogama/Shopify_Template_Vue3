@@ -6,12 +6,16 @@
   </div>
 </template>
 <style>
-
-html{
+html {
   overflow-x: hidden;
-  
 }
+
+
 body {
   font-family: 'Raleway', sans-serif;
+  position: relative;
+  overflow-x: hidden;
+
+
 }
 </style>
