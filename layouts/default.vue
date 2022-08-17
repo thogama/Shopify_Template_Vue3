@@ -1,7 +1,7 @@
 <template>
     <div>
         <Header />
-        <div class="p-5 row">
+        <div  class="mt-5 p-5 row">
             <slot  />
         </div>
         <Footer />
