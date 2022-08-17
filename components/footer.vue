@@ -1,24 +1,58 @@
 <template>
-    <footer class=" ps-2 pe-2 pt-3 pb-3" id="footer-root">
-        <h5 class="m-3 p-3  border-bottom ">Vue template</h5>
-        
+    <footer class="p-5 " id="footer-root">
+        <div   class="fs-5 col-sm-2 text-nowrap text-center ">Vue template</div>
+        <hr/>
+        <div  class="text-center text-light row m-2" id="links">
+            <div class="col fs-6 fs-6">
+                lorem
+            </div>
+            <div class="col fs-6">
+                ipsulum
+            </div>
+            <div class="col fs-6">
+                dolor
+            </div>
+            <div class="col fs-6">
+                met
+            </div>
+            <div class="col fs-6">
+                met
+            </div>
+            <div class="col fs-6">
+                met
+            </div>
+            <div class="col fs-6">
+                met
+            </div>
+            <div class="col fs-6">
+                met
+            </div>
+            <div class="col fs-6">
+                met
+            </div>
+            <div class="col fs-6">
+                met
+            </div>
+        </div>
+        <hr />
+
+
     </footer>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {
+
+}
 </script>
 
 <style  scoped>
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+    
+    font-size: smaller;
 }
-#footer-root{
+
+#footer-root {
     background-color: black;
     color: goldenrod;
 }
