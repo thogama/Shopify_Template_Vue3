@@ -1,5 +1,14 @@
-
 $primary: #daa520;
-$input-border-color:transparent;
+
+$input-border-width: 0px;
+$input-bg: whitesmoke;
+$input-btn-border-width: 0px;
+$border-width: 0px;
+$input-btn-line-height: 0.5;
+$input-btn-focus-color:        transparent;
+
+
+
+
 
 @import "../node_modules/bootstrap/scss/bootstrap"
