@@ -1,5 +1,5 @@
 <template>
-    <footer class="p-5 " id="footer-root">
+    <footer class="p-3 " id="footer-root">
         <div   class="fs-5 col-sm-2 text-nowrap text-center ">Vue template</div>
         <hr/>
         <div  class="text-center text-light row m-2" id="links">
