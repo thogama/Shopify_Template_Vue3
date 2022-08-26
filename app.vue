@@ -1,7 +1,7 @@
 <template>
   <div>
     <NuxtLayout>
-      <NuxtPage />
+      <NuxtPage class=" m-0" />
     </NuxtLayout>
   </div>
 </template>
@@ -15,6 +15,7 @@ body {
   font-family: 'Raleway', sans-serif;
   position: relative;
   overflow-x: hidden;
+  padding-right: 0 !important;
 
 
 }
