@@ -38,27 +38,36 @@
 
 
 
-    <div class=" p-3 border-bottom" id="header-hover">
-
+    <div  class=" p-3 border-bottom" id="header-hover">
+        
         <div id="example-1" class=" align-items-center d-flex  justify-content-around">
 
 
 
             <font-awesome-icon style="width: 10vh" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                aria-expanded="false" aria-controls="flush-collapseOne" id="busca" class="  vue-svg"
+                aria-expanded="false" aria-controls="flush-collapseOne" id="busca" class="col vue-svg"
                 icon="fa-solid fa-magnifying-glass" />
 
-            <font-awesome-icon style="width: 15vh;height: 8vh;" class=" vue-svg primary  " icon="fa-brands fa-vuejs" />
+            <font-awesome-icon style="width: 15vh;height: 8vh;" class="col  vue-svg primary  "
+                icon="fa-brands fa-vuejs" />
 
 
 
+            <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
+                class="vue-svg d-flex justify-content-center align-items-center col ">
+                <div class="hider ">
+                    My account
+                </div>
+                <font-awesome-icon prefix="alan" style="width: 10vh;" icon="fa-solid fa-user" />
+            </div>
 
-            <font-awesome-icon style="width: 10vh;" class="vue-svg" icon="fa-solid fa-user" />
 
 
 
         </div>
+        
     </div>
+    
 </template>
 
 <script  lang="ts" setup>
@@ -129,7 +138,9 @@ const field = useState("field", () => "")
 
 .vue-svg {
     color: goldenrod;
-    transition: color 1s;
+    transition: color 0.5s ease;
+    cursor: pointer;
+
 }
 
 .vue-svg:hover {
