@@ -6,6 +6,7 @@
   </div>
 </template>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 html {
   overflow-x: hidden;
 }
