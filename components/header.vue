@@ -95,7 +95,7 @@ const field = useState("field", () => "")
 
 <style scoped>
 .collapse {
-    transition: height 0.35s ease;
+    transition: height 0.25s ease;
     height: 100vh;
     background-color: white;
 
@@ -104,7 +104,7 @@ const field = useState("field", () => "")
 }
 
 .collapsing {
-    transition: height 0.5s ease;
+    transition: height 0.25s linear;
     background-color: white;
 
 }
