@@ -58,7 +58,7 @@
                 <div class="hider ">
                     My account
                 </div>
-                <font-awesome-icon prefix="alan" style="width: 10vh;" icon="fa-solid fa-user" />
+                <font-awesome-icon style="width: 10vh;" icon="fa-solid fa-user" />
             </div>
 
 
