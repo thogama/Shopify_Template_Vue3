@@ -1,52 +1,56 @@
 
 
 <template>
-    <header style="position: fixed;width: 100%;top:0vh ;z-index: 1;" class="accordion" id="accordionFlushExample">
-        <div class="accordion-item">
 
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                data-bs-parent="#accordionFlushExample">
-                <div class="row  border p-4 accordion-body">
-                    <!-- sugestions -->
-                    <div class="col-1"></div>
-                    <div style="background-color: whitesmoke;" class="d-flex align-items-center p-0 col">
+    <!-- Search  -->
+    <div style="height: 90vh;" class="offcanvas  offcanvas-top" tabindex="-1" id="offcanvasExample1"
+        aria-labelledby="offcanvasExampleLabel">
 
-                        <font-awesome-icon class="ms-1 me-2 col-1 p-3 fa-md ps-0 ms-0 pe-0 me-0 "
-                            icon="fa-solid fa-magnifying-glass" />
-                        <form @submit="(e) => do_search(field, e)">
-                            <input v-model="field" placeholder="Search for Products"
-                                class=" ps-0 ms-0 col border  form-control" type="text" />
-                        </form>
-                    </div>
-                    <font-awesome-icon data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                        aria-expanded="false" aria-controls="flush-collapseOne" id="busca"
-                        class=" vue-svg col-1 p-3 fa-lg" icon="fa-solid fa-xmark" />
+        <div class="p-5 pt-2 offcanvas-body">
+            <div class="row  border p-4 ">
 
-                </div>
-                <div class="row text-center accordion-body">
-                    <div class="col-6">666</div>
-                    <div class="col-6">66</div>
-                </div>
+                <div style="background-color: whitesmoke;" class="d-flex align-items-center p-0 col">
 
+                    <font-awesome-icon class="ms-1 me-2 col-1 p-3 fa-md ps-0 ms-0 pe-0 me-0 "
+                        icon="fa-solid fa-magnifying-glass" />
+                    <form class="col" @submit="(e) => do_search(field, e)">
+                        <input v-model="field" placeholder="Search for Products"
+                            class=" ps-0 ms-0  border  form-control" type="text" />
+                    </form>
+
+                    <font-awesome-icon data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample1"
+                        aria-controls="offcanvasExample1" id="busca" class="vue-svg col-1 p-3 fa-lg"
+                        icon="fa-solid fa-xmark" />
+                </div>  
             </div>
-            <hr />
+
+            <div class="row text-center p-5 ">
+                <div class="bg-danger col-6">666</div>
+
+                <div class="bg-primary col-6">66</div>
+            </div>
+
+
+
         </div>
+    </div>
 
 
 
-    </header>
 
 
 
-    <div  class=" p-3 border-bottom" id="header-hover">
-        
+
+
+
+    <div class=" p-3 border-bottom" id="header-hover">
+
         <div id="example-1" class=" align-items-center d-flex  justify-content-around">
 
 
 
-            <font-awesome-icon style="width: 10vh" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                aria-expanded="false" aria-controls="flush-collapseOne" id="busca" class="col vue-svg"
-                icon="fa-solid fa-magnifying-glass" />
+            <font-awesome-icon style="width: 10vh" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample1"
+                aria-controls="offcanvasExample1" id="busca" class="col vue-svg" icon="fa-solid fa-magnifying-glass" />
 
             <font-awesome-icon style="width: 15vh;height: 8vh;" class="col  vue-svg primary  "
                 icon="fa-brands fa-vuejs" />
@@ -65,17 +69,20 @@
 
 
         </div>
-        
+
     </div>
-    
+
 </template>
 
 <script  lang="ts" setup>
+const field = useState("field", () => "")
 
 const do_search = (message: string, e: Event) => {
     e.preventDefault()
     console.log(message)
 }
+
+
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
@@ -88,7 +95,6 @@ window.onscroll = function () {
     prevScrollpos = currentScrollPos;
 }
 
-const field = useState("field", () => "")
 
 </script>
 
