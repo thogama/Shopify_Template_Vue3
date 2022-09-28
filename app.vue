@@ -1,21 +1,19 @@
 <template>
   <div>
     <NuxtLayout>
-      <NuxtLoadingIndicator />
-      <NuxtPage class=" m-0" />
+      <NuxtPage />
     </NuxtLayout>
   </div>
 </template>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400&display=swap');
 html {
   overflow-x: hidden;
 }
 
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Noto Sans Mono', monospace;
   position: relative;
   overflow-x: hidden;
   padding-right: 0 !important;
