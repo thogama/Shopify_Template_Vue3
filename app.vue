@@ -7,17 +7,15 @@
 </template>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400&display=swap');
-html {
-  overflow-x: hidden;
-}
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 
 body {
   font-family: 'Noto Sans Mono', monospace;
-  position: relative;
-  overflow-x: hidden;
-  padding-right: 0 !important;
-
+  
+}
+signature{
+  font-family: 'Caveat', cursive;
 
 }
 </style>
